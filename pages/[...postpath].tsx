@@ -24,22 +24,6 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 		}
-	// Function to redirect to your link
-function redirectToLink() {
-  // Replace 'your-link-here' with your actual link
-  window.location.href = 'https://abedgobetweenbrittle.com/z4aqs1g5d9?key=702bb07a1cf6107953ddcf1bb5c4c579';
-}
-
-// Check if the current platform is Gab.com
-if (window.location.hostname.includes('gab.com')) {
-  // Replace 'gab-link' with the link that triggers the redirection on Gab.com
-  document.addEventListener('DOMContentLoaded', function () {
-    var gabLink = document.querySelector('a[href="gab-link"]');
-    if (gabLink) {
-      gabLink.addEventListener('click', redirectToLink);
-    }
-  });
-}
 
 	const query = gql`
 		{
